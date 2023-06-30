@@ -7,8 +7,14 @@
     width: 100%;
     max-width: 350px;
     height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 
+  .font 
+  {
+    font-family: 'Quicksand', sans-serif;
+}
 
 body {
     margin: 0;
@@ -20,7 +26,24 @@ body {
     text-transform: uppercase;
     text-align: center;
     padding: 32px;
-    background: #0a0a23;
+    background: #49494a;
     color: #fff;
-    border-bottom: 4px solid #fdb347;
+    border-bottom: 4px solid #fd47c6;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .gallery::after {
+    content: "";
+    width: 350px;
   }
